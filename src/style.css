@@ -76,6 +76,23 @@ body {
   border-bottom-left-radius: 4em;
 }
 
+/* Hero Section Styles */
+.intro__hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.intro__hero__header {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: var(--fs-900);
+  line-height: 1.25em;
+
+  display: flex;
+  flex-direction: column;
+}
+
 /* Social Media Links Styles */
 .intro__social-media-links__title {
   text-transform: uppercase;
