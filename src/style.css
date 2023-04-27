@@ -18,11 +18,6 @@
   /* Fonts */
   --font-poppins: "Poppins", sans-serif;
 
-  /* Font Weights */
-  --fw-400: 400;
-  --fw-500: 500;
-  --fw-700: 700;
-
   /* Font Sizes */
 
   --fs-400: 16px;
@@ -57,9 +52,9 @@ body {
 .header__logo {
   color: var(--primary-color-400);
   font-style: normal;
-  font-weight: var(--fw-700);
+  font-weight: 700;
   font-size: var(--fs-500);
-  line-height: 20px;
+  line-height: 1.25em;
 }
 
 /* Navbar Styles */
@@ -82,7 +77,15 @@ body {
 }
 
 /* Social Media Links Styles */
-.intro__social-media-links {
+.intro__social-media-links__title {
+  text-transform: uppercase;
+  color: var(--primary-color-300);
+  font-weight: 500;
+  line-height: 1.5em;
+  padding-bottom: 0.8em;
+}
+
+.intro__social-media-links__icons {
   display: flex;
   gap: 1.25em;
 }
