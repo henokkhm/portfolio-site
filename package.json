@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/henokkhm/portfolio-site/issues"
   },
-  "homepage": "https://github.com/henokkhm/portfolio-site#readme"
+  "homepage": "https://github.com/henokkhm/portfolio-site#readme",
+  "devDependencies": {
+    "hint": "^7.1.8"
+  }
 }
