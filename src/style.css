@@ -6,6 +6,7 @@
   --primary-color-500: #396df2;
   --dark-blue: #172b4d;
   --text-color: #344563;
+  --white: #ffffff;
   --grey-200: #ebebff;
   --grey-300: #f7f7f9;
   --gray-400: #c1c7d0;
@@ -14,8 +15,19 @@
   --light-blue: #ebebff;
   --background-color: #e5e5e5;
 
-  /* Colors */
+  /* Fonts */
   --font-poppins: "Poppins", sans-serif;
+
+  /* Font Weights */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /* Font Sizes */
+
+  --fs-400: 16px;
+  --fs-500: 18px;
+  --fs-900: 40px;
 }
 
 /* General Styles */
@@ -26,12 +38,35 @@ body {
 .container {
   min-width: 375px;
   max-width: 1440px;
-  min-height: 100vh;
   margin: 0 auto;
   padding: 0em 1em;
 }
 
 /* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+
+  padding: 1em 2.25em 1em 1.5em;
+  background-color: var(--white);
+}
+
+.header__logo {
+  color: var(--primary-color-400);
+  font-style: normal;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-500);
+  line-height: 20px;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__hamburger-menu {
+}
 
 /* Logo Styles */
 
