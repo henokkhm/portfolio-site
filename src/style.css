@@ -33,6 +33,7 @@
 /* General Styles */
 body {
   font-family: var(--font-poppins);
+  background-color: var(--background-color);
 }
 
 .container {
@@ -77,6 +78,8 @@ body {
   background-size: cover;
 
   min-height: 588px;
+  background-color: var(--white);
+  border-bottom-left-radius: 4em;
 }
 /* Social Media Links Styles */
 
