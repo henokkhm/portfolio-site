@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "This project is my personal portfolio website. This is the second project in Module-1 of the Full Stack Developer program at Microverse.",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henokkhm/portfolio-site.git"
+  },
+  "keywords": [
+    "web",
+    "developer",
+    "portfolio"
+  ],
+  "author": "Henok Kirubel Hailemariam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/henokkhm/portfolio-site/issues"
+  },
+  "homepage": "https://github.com/henokkhm/portfolio-site#readme"
+}
