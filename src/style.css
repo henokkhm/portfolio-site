@@ -40,7 +40,7 @@ body {
   min-width: 375px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0em 1em;
+  padding: 1em 2.25em 1em 1.5em;
 }
 
 /* Header Styles */
@@ -50,7 +50,6 @@ body {
   align-items: center;
   gap: 2em;
 
-  padding: 1em 2.25em 1em 1.5em;
   background-color: var(--white);
 }
 
@@ -81,7 +80,12 @@ body {
   background-color: var(--white);
   border-bottom-left-radius: 4em;
 }
+
 /* Social Media Links Styles */
+.intro__social-media-links {
+  display: flex;
+  gap: 1.25em;
+}
 
 /* Project Cards Styles */
 
