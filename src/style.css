@@ -53,6 +53,7 @@ body {
   background-color: var(--white);
 }
 
+/* Logo Styles */
 .header__logo {
   color: var(--primary-color-400);
   font-style: normal;
@@ -61,6 +62,7 @@ body {
   line-height: 20px;
 }
 
+/* Navbar Styles */
 .header__nav {
   display: none;
 }
@@ -68,12 +70,14 @@ body {
 .header__hamburger-menu {
 }
 
-/* Logo Styles */
-
-/* Navbar Styles */
-
 /* Intro Styles */
+.intro {
+  background-image: url("assets/header-shapes-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  min-height: 588px;
+}
 /* Social Media Links Styles */
 
 /* Project Cards Styles */
