@@ -44,6 +44,53 @@ body {
   padding: 1em 1.5em;
 }
 
+/* Primary Button Styles */
+.primary-button {
+  color: var(--primary-color-500);
+  background-color: var(--white);
+  padding: 0.8em;
+  font-size: var(--fs-500);
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.03;
+  border: 1px solid var(--primary-color-400);
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.primary-button:hover:enabled {
+  background-color: var(--primary-color-400);
+  color: var(--white);
+}
+
+.primary-button:active:enabled {
+  background-color: var(--primary-color-800);
+}
+
+.primary-button:disabled {
+  color: var(--gray-700);
+  border: 1px solid var(--gray-400);
+  cursor: not-allowed;
+}
+
+/* Social Media Links Styles */
+.social-media-links__title {
+  text-transform: uppercase;
+  color: var(--primary-color-300);
+  font-weight: 500;
+  line-height: 1.5em;
+  padding-bottom: 0.8em;
+}
+
+.social-media-links__icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.25em;
+}
+
 /* Header Styles */
 .header {
   display: flex;
@@ -103,23 +150,6 @@ body {
   color: var(--text-color);
   font-weight: 400;
   line-height: 1.5em;
-}
-
-/* Social Media Links Styles */
-.hero__social-media-links__title {
-  text-transform: uppercase;
-  color: var(--primary-color-300);
-  font-weight: 500;
-  line-height: 1.5em;
-  padding-bottom: 0.8em;
-}
-
-.hero__social-media-links__icons {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 1.25em;
 }
 
 /* Works Section Styles */
@@ -193,35 +223,6 @@ body {
   background-color: var(--light-blue);
   padding: 0.25em 0.8em;
   border-radius: 0.5em;
-}
-
-.works__project-card__button {
-  color: var(--primary-color-500);
-  background-color: var(--white);
-  padding: 0.8em;
-  font-size: var(--fs-500);
-  font-weight: 500;
-  line-height: 1.5em;
-  letter-spacing: 0.03;
-  border: 1px solid var(--primary-color-400);
-  border-radius: 0.5em;
-  cursor: pointer;
-  transition: all 250ms ease-in-out;
-}
-
-.works__project-card__button:hover:enabled {
-  background-color: var(--primary-color-400);
-  color: var(--white);
-}
-
-.works__project-card__button:active:enabled {
-  background-color: var(--primary-color-800);
-}
-
-.works__project-card__button:disabled {
-  color: var(--gray-700);
-  border: 1px solid var(--gray-400);
-  cursor: not-allowed;
 }
 
 /* About Me Styles */
