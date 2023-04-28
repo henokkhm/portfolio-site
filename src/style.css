@@ -263,6 +263,15 @@ body {
   font-size: var(--fs-700);
   font-weight: 500;
   border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+.about-me__summary__header.expanded {
+  border: none;
+}
+
+.about-me__summary__header.expanded > img {
+  transform: rotateZ(90deg);
 }
 
 .about-me__languages-list {
