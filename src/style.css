@@ -6,7 +6,7 @@
   --primary-color-500: #396df2;
   --dark-blue: #172b4d;
   --text-color: #344563;
-  --white: #ffffff;
+  --white: #fff;
   --grey-200: #ebebff;
   --grey-300: #f7f7f9;
   --gray-400: #c1c7d0;
@@ -44,7 +44,6 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2em;
-
   background-color: var(--white);
 }
 
@@ -73,11 +72,9 @@ body {
   background-color: var(--white);
   background-repeat: no-repeat;
   background-size: contain;
-
   min-height: 588px;
   padding-top: 5em;
   border-bottom-left-radius: 4em;
-
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -88,7 +85,6 @@ body {
   font-weight: 700;
   font-size: var(--fs-900);
   line-height: 1.25em;
-
   display: flex;
   flex-direction: column;
 }
