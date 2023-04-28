@@ -4,14 +4,15 @@
   --primary-color-300: #7f8cff;
   --primary-color-400: #6070ff;
   --primary-color-500: #396df2;
+  --primary-color-800: #2230d2;
   --dark-blue: #172b4d;
   --text-color: #344563;
   --white: #fff;
-  --grey-200: #ebebff;
-  --grey-300: #f7f7f9;
+  --gray-300: #f7f7f9;
   --gray-400: #c1c7d0;
-  --grey-500: #b3bac5;
+  --gray-500: #b3bac5;
   --gray-600: #7a869a;
+  --gray-700: #5e6c84;
   --light-blue: #ebebff;
   --border-color: #dfe1e6;
   --background-color: #e5e5e5;
@@ -21,8 +22,12 @@
 
   /* Font Sizes */
 
+  --fs-200: 13px;
+  --fs-300: 15px;
   --fs-400: 16px;
-  --fs-500: 18px;
+  --fs-500: 17px;
+  --fs-600: 18px;
+  --fs-800: 32px;
   --fs-900: 40px;
 }
 
@@ -36,7 +41,7 @@ body {
   min-width: 375px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1em 2.25em 1em 1.5em;
+  padding: 1em 1.5em;
 }
 
 /* Header Styles */
@@ -53,7 +58,7 @@ body {
   color: var(--primary-color-400);
   font-style: normal;
   font-weight: 700;
-  font-size: var(--fs-500);
+  font-size: var(--fs-600);
   line-height: 1.25em;
   cursor: pointer;
 }
@@ -120,6 +125,7 @@ body {
 /* Works Section Styles */
 .works__cards-list {
   margin: 0;
+  padding: 0;
   list-style: none;
   display: grid;
 }
@@ -127,6 +133,7 @@ body {
 .works__project-card {
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 0.8em;
   border-radius: 1em;
   padding: 1em;
@@ -174,6 +181,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 0.5em;
   display: flex;
   gap: 0.5em;
 }
@@ -185,12 +193,37 @@ body {
   border-radius: 0.5em;
 }
 
+.works__project-card__button {
+  color: var(--primary-color-500);
+  background-color: var(--white);
+  padding: 0.8em;
+  font-size: var(--fs-500);
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.03;
+  border: 1px solid var(--primary-color-400);
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.works__project-card__button:hover:enabled {
+  background-color: var(--primary-color-400);
+  color: var(--white);
+}
+
+.works__project-card__button:active:enabled {
+  background-color: var(--primary-color-800);
+}
+
+.works__project-card__button:disabled {
+  color: var(--gray-700);
+  border: 1px solid var(--gray-400);
+  cursor: not-allowed;
+}
+
 /* About Me Styles */
 
 /* Social Media Links Styles */
 
 /* Contact Form Styles */
-
-/* Social Media Links Styles */
-
-/* Footer Styles */
