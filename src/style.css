@@ -134,7 +134,42 @@ body {
   border: 1px solid var(--border-color);
 }
 
-/* Social Media Links Styles */
+.works__project-card__screenshot {
+  border-radius: 0.5em;
+}
+
+.works__project-card__title {
+  font-weight: 700;
+  font-size: var(--fs-800);
+}
+
+.works__project-card__summary {
+  display: flex;
+  gap: 0.8em;
+}
+
+.works__project-card__client {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 300;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+.works__project-card__role,
+.works__project-card__year {
+  color: var(--gray-600);
+  font-size: 300;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+.works__project-card__intro {
+  color: var(--text-color);
+  font-size: var(--fs-300);
+  line-height: 1.5em;
+}
+
 
 /* About Me Styles */
 
