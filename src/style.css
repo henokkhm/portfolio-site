@@ -13,6 +13,7 @@
   --grey-500: #b3bac5;
   --gray-600: #7a869a;
   --light-blue: #ebebff;
+  --border-color: #dfe1e6;
   --background-color: #e5e5e5;
 
   /* Fonts */
@@ -116,7 +117,22 @@ body {
   gap: 1.25em;
 }
 
-/* Project Cards Styles */
+/* Works Section Styles */
+.works__cards-list {
+  margin: 0;
+  list-style: none;
+  display: grid;
+}
+
+.works__project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+}
 
 /* Social Media Links Styles */
 
