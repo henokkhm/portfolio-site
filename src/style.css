@@ -59,6 +59,10 @@ body {
 
 /* Navbar Styles */
 .header__nav {
+  display: flex;
+}
+
+.header__nav__desktop {
   display: none;
 }
 
