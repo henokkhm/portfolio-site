@@ -126,8 +126,10 @@ body {
 .works__cards-list {
   margin: 0;
   padding: 0;
+  padding-top: 7em;
   list-style: none;
   display: grid;
+  gap: 5.5em;
 }
 
 .works__project-card {
