@@ -55,6 +55,7 @@ body {
   font-weight: 700;
   font-size: var(--fs-500);
   line-height: 1.25em;
+  cursor: pointer;
 }
 
 /* Navbar Styles */
@@ -63,6 +64,7 @@ body {
 }
 
 .header__hamburger-menu {
+  cursor: pointer;
 }
 
 /* Hero Section Styles */
