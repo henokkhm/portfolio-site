@@ -258,7 +258,7 @@ body {
 .about-me__summary__header {
   display: flex;
   justify-content: space-between;
-  padding: 1.75em 1.5em;
+  padding: 1.75rem 1.5rem 1.75rem 0.8rem;
   color: var(--black);
   font-size: var(--fs-700);
   font-weight: 500;
@@ -281,6 +281,7 @@ body {
   gap: 1.5em;
   list-style: none;
   padding: 0;
+  padding-left: 0.8rem;
   margin: 0;
 }
 
