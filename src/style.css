@@ -68,6 +68,12 @@ body {
   transition: all 250ms ease-in-out;
 }
 
+.primary-button:disabled {
+  color: var(--gray-700);
+  border: 1px solid var(--gray-400);
+  cursor: not-allowed;
+}
+
 .primary-button:hover:enabled {
   background-color: var(--primary-color-400);
   color: var(--white);
@@ -75,12 +81,6 @@ body {
 
 .primary-button:active:enabled {
   background-color: var(--primary-color-800);
-}
-
-.primary-button:disabled {
-  color: var(--gray-700);
-  border: 1px solid var(--gray-400);
-  cursor: not-allowed;
 }
 
 /* Social Media Links Styles */
