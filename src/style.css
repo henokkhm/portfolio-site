@@ -112,6 +112,7 @@ body {
 
 /* Logo Styles */
 .header__logo {
+  text-decoration: none;
   color: var(--primary-color-400);
   font-style: normal;
   font-weight: 700;
