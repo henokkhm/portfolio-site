@@ -170,6 +170,20 @@ body {
   line-height: 1.5em;
 }
 
+.works__project-card__tech-stack-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.5em;
+}
+
+.works__project-card__tech-stack-item {
+  color: var(--primary-color-400);
+  background-color: var(--light-blue);
+  padding: 0.25em 0.8em;
+  border-radius: 0.5em;
+}
 
 /* About Me Styles */
 
