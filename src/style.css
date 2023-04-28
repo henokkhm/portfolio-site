@@ -65,25 +65,23 @@ body {
 .header__hamburger-menu {
 }
 
-/* Intro Styles */
-.intro {
+/* Hero Section Styles */
+.hero {
   background-image: url("assets/header-shapes-mobile.svg");
+  background-color: var(--white);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   min-height: 588px;
-  background-color: var(--white);
+  padding-top: 5em;
   border-bottom-left-radius: 4em;
-}
 
-/* Hero Section Styles */
-.intro__hero {
   display: flex;
   flex-direction: column;
-  gap: 0.8em;
+  gap: 1.5em;
 }
 
-.intro__hero__header {
+.hero__header {
   color: var(--dark-blue);
   font-weight: 700;
   font-size: var(--fs-900);
@@ -98,8 +96,9 @@ body {
   font-weight: 400;
   line-height: 1.5em;
 }
+
 /* Social Media Links Styles */
-.intro__social-media-links__title {
+.hero__social-media-links__title {
   text-transform: uppercase;
   color: var(--primary-color-300);
   font-weight: 500;
@@ -107,7 +106,7 @@ body {
   padding-bottom: 0.8em;
 }
 
-.intro__social-media-links__icons {
+.hero__social-media-links__icons {
   display: flex;
   gap: 1.25em;
 }
