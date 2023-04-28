@@ -44,6 +44,12 @@ body {
   padding: 1em 1.5em;
 }
 
+.paragraph-text {
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
 /* Primary Button Styles */
 .primary-button {
   color: var(--primary-color-500);
@@ -86,6 +92,7 @@ body {
 .social-media-links__icons {
   list-style: none;
   padding: 0;
+  padding-bottom: 2em;
   margin: 0;
   display: flex;
   gap: 1.25em;
@@ -146,17 +153,10 @@ body {
   flex-direction: column;
 }
 
-.hero__body {
-  color: var(--text-color);
-  font-weight: 400;
-  line-height: 1.5em;
-}
-
 /* Works Section Styles */
 .works__cards-list {
   margin: 0;
-  padding: 0;
-  padding-top: 7em;
+  padding: 7em 0;
   list-style: none;
   display: grid;
   gap: 5.5em;
@@ -226,6 +226,21 @@ body {
 }
 
 /* About Me Styles */
+.about-me {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5em;
+  padding: 7em 1.5em;
+  border-top-right-radius: 4em;
+}
+
+.about-me__header {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: var(--fs-900);
+}
 
 /* Social Media Links Styles */
 
