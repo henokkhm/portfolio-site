@@ -1,0 +1,131 @@
+/* Custom Properties */
+:root {
+  /* Colors */
+  --primary-color-300: #7f8cff;
+  --primary-color-400: #6070ff;
+  --primary-color-500: #396df2;
+  --dark-blue: #172b4d;
+  --text-color: #344563;
+  --white: #fff;
+  --grey-200: #ebebff;
+  --grey-300: #f7f7f9;
+  --gray-400: #c1c7d0;
+  --grey-500: #b3bac5;
+  --gray-600: #7a869a;
+  --light-blue: #ebebff;
+  --background-color: #e5e5e5;
+
+  /* Fonts */
+  --font-poppins: "Poppins", sans-serif;
+
+  /* Font Sizes */
+
+  --fs-400: 16px;
+  --fs-500: 18px;
+  --fs-900: 40px;
+}
+
+/* General Styles */
+body {
+  font-family: var(--font-poppins);
+  background-color: var(--background-color);
+}
+
+.container {
+  min-width: 375px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1em 2.25em 1em 1.5em;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  background-color: var(--white);
+}
+
+/* Logo Styles */
+.header__logo {
+  color: var(--primary-color-400);
+  font-style: normal;
+  font-weight: 700;
+  font-size: var(--fs-500);
+  line-height: 1.25em;
+  cursor: pointer;
+}
+
+/* Navbar Styles */
+.header__nav {
+  display: flex;
+}
+
+.header__nav__desktop {
+  display: none;
+}
+
+.header__hamburger-menu {
+  cursor: pointer;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url("assets/header-shapes-mobile.svg");
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 588px;
+  padding-top: 5em;
+  border-bottom-left-radius: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.hero__header {
+  color: var(--dark-blue);
+  font-weight: 700;
+  font-size: var(--fs-900);
+  line-height: 1.25em;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__body {
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+/* Social Media Links Styles */
+.hero__social-media-links__title {
+  text-transform: uppercase;
+  color: var(--primary-color-300);
+  font-weight: 500;
+  line-height: 1.5em;
+  padding-bottom: 0.8em;
+}
+
+.hero__social-media-links__icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.25em;
+}
+
+/* Project Cards Styles */
+
+/* Social Media Links Styles */
+
+/* About Me Styles */
+
+/* Social Media Links Styles */
+
+/* Contact Form Styles */
+
+/* Social Media Links Styles */
+
+/* Footer Styles */
