@@ -8,11 +8,13 @@
   --dark-blue: #172b4d;
   --text-color: #344563;
   --white: #fff;
+  --black: #000;
   --gray-300: #f7f7f9;
   --gray-400: #c1c7d0;
   --gray-500: #b3bac5;
   --gray-600: #7a869a;
   --gray-700: #5e6c84;
+  --gray-800: #253858;
   --light-blue: #ebebff;
   --border-color: #dfe1e6;
   --background-color: #e5e5e5;
@@ -27,6 +29,7 @@
   --fs-400: 16px;
   --fs-500: 17px;
   --fs-600: 18px;
+  --fs-700: 20px;
   --fs-800: 32px;
   --fs-900: 40px;
 }
@@ -242,6 +245,48 @@ body {
   font-size: var(--fs-900);
 }
 
-/* Social Media Links Styles */
+.about-me__summary {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  list-style: none;
+  padding: 2em 0;
+  margin: 0;
+}
+
+.about-me__summary__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+  color: var(--black);
+  font-size: var(--fs-700);
+  font-weight: 500;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-me__languages-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-me__language-item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5625em 0.8em;
+  background-color: var(--gray-300);
+  color: var(--gray-800);
+  border-radius: 0.5em;
+  font-weight: 500;
+  font-size: var(--fs-300);
+  line-height: 1.25em;
+}
 
 /* Contact Form Styles */
