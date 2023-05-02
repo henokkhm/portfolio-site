@@ -348,8 +348,44 @@
       </section>
 
       <!-- Contact Form -->
-      <section class="container">
-        <!-- Social Media Links -->
+      <section class="container contact-me-form">
+        <form action="#" method="POST">
+          <div class="contact-me-form__control">
+            <label class="contact-me-form__label" for="full-name">
+              Full name:
+            </label>
+            <input
+              class="contact-me-form__input"
+              type="text"
+              id="full-name"
+              name="fullName"
+              placeholder="Alexandra Loremipsum"
+            />
+          </div>
+          <div class="contact-me-form__control">
+            <label class="contact-me-form__label" for="email">Email: </label>
+            <input
+              class="contact-me-form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="alexandra@gmail.com"
+            />
+          </div>
+          <div class="contact-me-form__control">
+            <label class="contact-me-form__label" for="message">
+              Message:
+            </label>
+            <textarea
+              class="contact-me-form__textarea"
+              name="message"
+              id="message"
+              placeholder="Write your message here"
+            >
+            </textarea>
+          </div>
+          <button type="submit" class="primary-button">Get in touch</button>
+        </form>
       </section>
     </main>
 
