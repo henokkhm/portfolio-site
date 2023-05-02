@@ -271,7 +271,7 @@ body {
   border: none;
 }
 
-.about-me__summary__header.expanded > img {
+.about-me__summary__header.expanded>img {
   transform: rotateZ(90deg);
 }
 
@@ -302,16 +302,19 @@ body {
 
 /* Contact Form Styles */
 .contact-me-form {
+  background-color: var(--primary-color-400);
+  padding-top: 100px;
 }
 
-.contact-me-form__control {
-}
 
-.contact-me-form__label {
-}
+.contact-me-form__title {}
 
-.contact-me-form__input {
-}
+.contact-me-form__description {}
 
-.contact-me-form__textarea {
-}
+.contact-me-form__control {}
+
+.contact-me-form__label {}
+
+.contact-me-form__input {}
+
+.contact-me-form__textarea {}
