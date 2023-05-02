@@ -271,7 +271,7 @@ body {
   border: none;
 }
 
-.about-me__summary__header.expanded>img {
+.about-me__summary__header.expanded > img {
   transform: rotateZ(90deg);
 }
 
@@ -297,66 +297,72 @@ body {
   border-radius: 0.5em;
   font-weight: 500;
   font-size: var(--fs-300);
-  line-height: 1.25em;
+  line-height: 3.25em;
 }
 
 /* Contact Form Styles */
-.contact-me-form {
+.contact-me {
+  background-image: url("assets/images/contact-form-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 103% 30%;
+  background-size: 62% 100%;
   background-color: var(--primary-color-400);
-  padding-top: 100px;
+  padding-top: 6em;
   border-top-left-radius: 4em;
   margin-top: -4em;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
   flex-direction: column;
+  gap: 1em;
 }
 
-
-.contact-me-form__title {
+.contact-me__title {
   text-align: center;
   color: var(--white);
   font-size: var(--fs-900);
+  font-weight: 700;
+  line-height: 1.5em;
 }
 
-.contact-me-form__description {
+.contact-me__description {
+  max-width: 28em;
   text-align: center;
+  padding: 0 1em;
   color: var(--light-blue);
   font-size: var(--fs-700);
   line-height: 1.75em;
-
 }
 
+.contact-me__form {
+  margin-top: 2.25em;
+  max-width: 28em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
 
-.contact-me-form__control {}
-
-.contact-me-form__label {
+.contact-me__form__label {
   display: none;
 }
 
-.contact-me-form__input {
+.contact-me__form__input {
   width: 100%;
-  height: 3.2rem;
-  border-radius: 8px;
-  background-color: white;
-  padding: 10px 20px;
-  margin-bottom: 30px;
+  border-radius: 0.5em;
+  padding: 1em;
   outline: none;
   border: 2px solid transparent;
 }
 
-.contact-me-form__input:focus {
+.contact-me__form__input:focus {
   border-color: var(--black);
 }
 
-
-.contact-me-form__textarea {
+.contact-me__form__textarea {
+  min-height: 10em;
   resize: vertical;
-  min-height: 300px;
-  width: 100%;
-  outline: none;
-  border-radius: 8px;
   transition: 0.2s;
-  padding: 20px;
+}
+
+.contact-me__form__textarea:focus {
+  border-color: var(--black);
 }
