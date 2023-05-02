@@ -17,6 +17,7 @@
 
     <title>Henok's Portfolio</title>
   </head>
+
   <body>
     <!-- Header -->
     <header class="header container">
@@ -348,12 +349,60 @@
       </section>
 
       <!-- Contact Form -->
-      <section class="container">
-        <!-- Social Media Links -->
+      <section class="container contact-me">
+        <h2 class="contact-me__title">Contact me</h2>
+
+        <p class="contact-me__description">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it!
+        </p>
+
+        <form
+          class="contact-me__form"
+          action="https://formspree.io/f/mqkonbkk"
+          method="POST"
+        >
+          <div>
+            <input
+              aria-label="Full name"
+              class="contact-me__form__input"
+              type="text"
+              id="full-name"
+              name="fullName"
+              placeholder="Alexandra Loremipsum"
+              maxlength="30"
+              required
+            />
+          </div>
+          <div>
+            <input
+              aria-label="Email"
+              class="contact-me__form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="alexandra@gmail.com"
+              required
+            />
+          </div>
+          <div>
+            <textarea
+              aria-label="Message"
+              class="contact-me__form__input contact-me__form__textarea"
+              name="message"
+              id="message"
+              placeholder="Write your message here"
+              maxlength="500"
+              required
+            ></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="primary-button">Get in touch</button>
+          </div>
+        </form>
       </section>
     </main>
-
-    <!-- Footer -->
-    <footer class="container"></footer>
   </body>
 </html>
