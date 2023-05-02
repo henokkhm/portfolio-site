@@ -136,7 +136,7 @@ body {
 
 /* Hero Section Styles */
 .hero {
-  background-image: url("assets/header-shapes-mobile.svg");
+  background-image: url("assets/images/header-shapes-mobile.svg");
   background-color: var(--white);
   background-repeat: no-repeat;
   background-size: contain;
