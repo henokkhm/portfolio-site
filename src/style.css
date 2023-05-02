@@ -366,3 +366,12 @@ body {
 .contact-me__form__textarea:focus {
   border-color: var(--black);
 }
+
+.contact-me__form__submit-button:hover:enabled {
+  background-color: #db574b;
+  color: var(--white);
+}
+
+.contact-me__form__submit-button:active:enabled {
+  background-color: #db574b;
+}
