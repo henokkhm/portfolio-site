@@ -341,10 +341,6 @@ body {
   gap: 2rem;
 }
 
-.contact-me__form__label {
-  display: none;
-}
-
 .contact-me__form__input {
   width: 100%;
   border-radius: 0.5em;
