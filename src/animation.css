@@ -1,0 +1,47 @@
+.hero h1 {
+    transition-delay: 0s;
+    animation: translatex 500ms ease;
+}
+
+.hero .paragraph-text {
+    animation: translatexWithOpacity 800ms ease;
+    transition: 1s;
+}
+
+.social-media-links__icons img {
+    animation: rotateWithOpacity 300ms ease-in;
+}
+
+@keyframes translatex {
+    from {
+        transform: translateX(-500px);
+    }
+
+    to {
+        transform: translateX(-0px);
+    }
+}
+
+@keyframes translatexWithOpacity {
+    from {
+        transform: translateX(-500px) scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-0px) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateWithOpacity {
+    from {
+        transform: rotate(-100deg);
+        scale: 0;
+    }
+
+    to {
+        transform: rotate(0);
+        scale: 1;
+    }
+}
