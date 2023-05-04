@@ -1,0 +1,62 @@
+/* Animate header */
+.header > * {
+  animation: animate-header 3s cubic-bezier(0, 1.12, 0.45, 1.02);
+}
+
+@keyframes animate-header {
+  0% {
+    opacity: 0;
+    transform: translateY(-1em);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate hero section */
+.hero > * {
+  animation: animate-hero 3s cubic-bezier(0, 1.12, 0.45, 1.02);
+}
+
+@keyframes animate-hero {
+  0% {
+    opacity: 0;
+    transform: translateY(0.75em);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate social media links */
+.social-media-links__icons > * {
+  transition: transform 0.2s ease-in-out 0.1s;
+  animation: animate-icons 0.3s ease-in;
+}
+
+@keyframes animate-icons {
+  from {
+    transform: rotate(-30deg);
+  }
+
+  to {
+    transform: rotate(0);
+  }
+}
+
+.social-media-links__icons > *:hover {
+  transform: rotate(10deg) scale(1.05);
+}
+
+/* Animate project screenshots */
+.works__project-card__screenshot {
+  transition: transform 0.3s ease-in-out;
+}
+
+.works__project-card__screenshot:hover {
+  transform: scale(1.2);
+}
