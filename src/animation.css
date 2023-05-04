@@ -32,6 +32,7 @@
 
 /* Animate social media links */
 .social-media-links__icons > * {
+  transition: transform 0.2s ease-in-out 0.1s;
   animation: animate-icons 0.3s ease-in;
 }
 
@@ -43,4 +44,8 @@
   to {
     transform: rotate(0);
   }
+}
+
+.social-media-links__icons > *:hover {
+  transform: rotate(10deg) scale(1.05);
 }
