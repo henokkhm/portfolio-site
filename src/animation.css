@@ -1,6 +1,6 @@
 /* Animate header */
 .header > * {
-  animation: animate-header 0.3s ease-in;
+  animation: animate-header 3s cubic-bezier(0, 1.12, 0.45, 1.02);
 }
 
 @keyframes animate-header {
@@ -16,13 +16,13 @@
 
 /* Animate hero section */
 .hero > * {
-  animation: animate-hero 0.3s ease-in;
+  animation: animate-hero 3s cubic-bezier(0, 1.12, 0.45, 1.02);
 }
 
 @keyframes animate-hero {
   0% {
     opacity: 0;
-    transform: translateY(1em);
+    transform: translateY(0.75em);
   }
   100% {
     opacity: 1;
