@@ -49,3 +49,12 @@
 .social-media-links__icons > *:hover {
   transform: rotate(10deg) scale(1.05);
 }
+
+/* Animate project screenshots */
+.works__project-card__screenshot {
+  transition: transform 0.3s ease-in-out;
+}
+
+.works__project-card__screenshot:hover {
+  transform: scale(1.2);
+}

@@ -178,6 +178,10 @@ body {
   border: 1px solid var(--border-color);
 }
 
+.works__project-card__screenshot-wrapper {
+  overflow: hidden;
+}
+
 .works__project-card__screenshot {
   border-radius: 0.5em;
 }
