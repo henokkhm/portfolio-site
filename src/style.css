@@ -325,13 +325,20 @@ body {
   border-top-right-radius: 4em;
 }
 
+.about-me__summary {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5em;
+}
+
 .about-me__header {
   color: var(--dark-blue);
   font-weight: 700;
   font-size: var(--fs-900);
 }
 
-.about-me__summary {
+.about-me__skills {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -341,7 +348,7 @@ body {
   margin: 0;
 }
 
-.about-me__summary__header {
+.about-me__skills__header {
   display: flex;
   justify-content: space-between;
   padding: 1.75rem 1.5rem 1.75rem 0.8rem;
@@ -352,11 +359,11 @@ body {
   cursor: pointer;
 }
 
-.about-me__summary__header.expanded {
+.about-me__skills__header.expanded {
   border: none;
 }
 
-.about-me__summary__header.expanded > img {
+.about-me__skills__header.expanded > img {
   transform: rotateZ(90deg);
 }
 
@@ -383,6 +390,25 @@ body {
   font-weight: 500;
   font-size: var(--fs-300);
   line-height: 3.25em;
+}
+
+@media (min-width: 768px) {
+  .about-me {
+    flex-direction: row;
+    gap: 2.5em;
+    justify-content: center;
+  }
+
+  .about-me__summary {
+    width: 40%;
+    max-width: 447px;
+    padding-top: 3.75em;
+  }
+
+  .about-me__skills {
+    width: 60%;
+    max-width: 618px;
+  }
 }
 
 /* Contact Form Styles */
