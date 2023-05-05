@@ -35,6 +35,10 @@
 }
 
 /* General Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-poppins);
   background-color: var(--background-color);
