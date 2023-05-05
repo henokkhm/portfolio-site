@@ -215,6 +215,8 @@ body {
 }
 
 .works__project-card {
+  max-width: 1156px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -223,6 +225,16 @@ body {
   padding: 1em;
   background-color: var(--white);
   border: 1px solid var(--border-color);
+}
+
+@media (min-width: 768px) {
+  .works__project-card {
+    flex-direction: row;
+  }
+
+  .works__project-card > * {
+    flex: 1 1 0px;
+  }
 }
 
 .works__project-card__screenshot-wrapper {
