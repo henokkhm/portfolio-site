@@ -24,6 +24,7 @@
 
   /* Font Sizes */
 
+  --fs-100: 12px;
   --fs-200: 13px;
   --fs-300: 15px;
   --fs-400: 16px;
@@ -32,6 +33,7 @@
   --fs-700: 20px;
   --fs-800: 32px;
   --fs-900: 40px;
+  --fs-950: 48px;
 }
 
 /* General Styles */
@@ -61,7 +63,7 @@ body {
 .primary-button {
   color: var(--primary-color-500);
   background-color: var(--white);
-  max-width: 8.875em;
+  max-width: max-content;
   padding: 0.8em;
   font-size: var(--fs-500);
   font-weight: 500;
@@ -107,9 +109,19 @@ body {
   gap: 1.25em;
 }
 
+@media (min-width: 768px) {
+  .paragraph-text {
+    font-size: var(--fs-700);
+  }
+
+  .social-media-links__title {
+    font-size: var(--fs-400);
+  }
+}
+
 /* Header Styles */
 .header {
-  padding: 1.625em 0;
+  padding: 1em 0;
   background-color: var(--white);
 }
 
@@ -172,6 +184,10 @@ body {
 
 /* Header Desktop Styles */
 @media (min-width: 768px) {
+  .header__wrapper {
+    padding: 0.625em;
+  }
+
   .header__nav__desktop {
     display: flex;
     gap: 2em;
@@ -211,6 +227,12 @@ body {
   line-height: 1.25em;
   display: flex;
   flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .hero__header {
+    font-size: var(--fs-950);
+  }
 }
 
 /* Works Section Styles */
@@ -254,22 +276,19 @@ body {
 .works__project-card__summary {
   display: flex;
   gap: 0.8em;
+  font-size: var(--fs-300);
+  font-weight: 600;
+  line-height: 1em;
 }
 
 .works__project-card__client {
   color: var(--text-color);
   text-transform: uppercase;
-  font-size: 300;
-  font-weight: 600;
-  line-height: 1em;
 }
 
 .works__project-card__role,
 .works__project-card__year {
   color: var(--gray-600);
-  font-size: 300;
-  font-weight: 600;
-  line-height: 1em;
 }
 
 .works__project-card__intro {
@@ -297,9 +316,13 @@ body {
 
 /* Works Section Desktop Styles */
 @media (min-width: 768px) {
+  .works__cards-list {
+    gap: 8.875em;
+  }
   .works__project-card {
     flex-direction: row;
     gap: 2.87em;
+    padding: 1.375em;
   }
 
   .works__project-card:nth-child(even) {
@@ -310,8 +333,26 @@ body {
     flex: 1 1 0px;
   }
 
+  .works__project-card__title {
+    font-size: var(--fs-900);
+  }
+
+  .works__project-card__summary {
+    font-size: var(--fs-600);
+    font-weight: 400;
+  }
+
+  .works__project-card__intro {
+    font-size: var(--fs-400);
+  }
+
+  .works__project-card__body {
+    padding: 1.5em;
+  }
+
   .works__project-card__tech-stack-item {
     text-transform: lowercase;
+    font-size: var(--fs-100);
   }
 }
 
@@ -400,6 +441,10 @@ body {
     justify-content: center;
   }
 
+  .about-me__paragraph {
+    font-size: var(--fs-400);
+  }
+
   .about-me__summary {
     width: 40%;
     max-width: 447px;
@@ -409,6 +454,17 @@ body {
   .about-me__skills {
     width: 60%;
     max-width: 618px;
+  }
+
+  .about-me__languages-list {
+    flex-direction: row;
+  }
+
+  .about-me__language-item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 7.625em;
+    padding: 0.75em;
   }
 }
 
@@ -480,4 +536,10 @@ body {
 
 .contact-me__form__textarea:focus {
   border-color: var(--black);
+}
+
+@media (min-width: 768px) {
+  .contact-me__form__input {
+    border-radius: 0.125em;
+  }
 }
