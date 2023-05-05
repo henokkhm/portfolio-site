@@ -44,7 +44,7 @@ body {
   min-width: 375px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1.5em;
+  padding: 0;
 }
 
 .paragraph-text {
@@ -104,7 +104,7 @@ body {
 
 /* Header Styles */
 .header {
-  padding: 1.625 em 0;
+  padding: 1.625em 0;
   background-color: var(--white);
 }
 
@@ -115,6 +115,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2em;
+  padding: 0 1.5em;
 }
 
 /* Logo Styles */
@@ -164,6 +165,7 @@ body {
   cursor: pointer;
 }
 
+/* Header Desktop Styles */
 @media (min-width: 768px) {
   .header__nav__desktop {
     display: flex;
@@ -194,6 +196,7 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 1.5em;
+  padding: 0 1.5em;
 }
 
 .hero__header {
@@ -217,32 +220,25 @@ body {
 .works__project-card {
   max-width: 1156px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 0.8em;
   border-radius: 1em;
   padding: 1em;
   background-color: var(--white);
   border: 1px solid var(--border-color);
-}
-
-@media (min-width: 768px) {
-  .works__project-card {
-    flex-direction: row;
-  }
-
-  .works__project-card > * {
-    flex: 1 1 0px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
 }
 
 .works__project-card__screenshot-wrapper {
   overflow: hidden;
+  border-radius: 0.5em;
 }
 
-.works__project-card__screenshot {
-  border-radius: 0.5em;
+.works__project-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.8em;
 }
 
 .works__project-card__title {
@@ -291,6 +287,27 @@ body {
   background-color: var(--light-blue);
   padding: 0.25em 0.8em;
   border-radius: 0.5em;
+  text-transform: uppercase;
+}
+
+/* Works Section Desktop Styles */
+@media (min-width: 768px) {
+  .works__project-card {
+    flex-direction: row;
+    gap: 2.87em;
+  }
+
+  .works__project-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .works__project-card > * {
+    flex: 1 1 0px;
+  }
+
+  .works__project-card__tech-stack-item {
+    text-transform: lowercase;
+  }
 }
 
 /* About Me Styles */

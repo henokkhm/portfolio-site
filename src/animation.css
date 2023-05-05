@@ -60,3 +60,9 @@
 .works__project-card__screenshot:hover {
   transform: scale(1.2);
 }
+
+@media (min-width: 768px) {
+  .works__project-card__screenshot:hover {
+    transform: scale(1.05);
+  }
+}
