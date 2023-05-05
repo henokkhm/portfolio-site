@@ -61,11 +61,12 @@ body {
 .primary-button {
   color: var(--primary-color-500);
   background-color: var(--white);
+  max-width: 8.875em;
   padding: 0.8em;
   font-size: var(--fs-500);
   font-weight: 500;
   line-height: 1.5em;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   border: 1px solid var(--primary-color-400);
   border-radius: 0.5em;
   cursor: pointer;
@@ -422,8 +423,14 @@ body {
   padding-bottom: 2.8125em;
   border-top-left-radius: 4em;
   margin-top: -4em;
+}
+
+.contact-me__wrapper {
+  max-width: 35em;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
 }
 
@@ -436,7 +443,6 @@ body {
 }
 
 .contact-me__description {
-  max-width: 28em;
   text-align: center;
   padding: 0 1em;
   color: var(--light-blue);
@@ -446,10 +452,11 @@ body {
 
 .contact-me__form {
   margin-top: 2.25em;
+  width: 100%;
   max-width: 28em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 

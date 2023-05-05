@@ -368,21 +368,19 @@
       </section>
 
       <!-- Contact Form -->
-      <section id="contact" class="container contact-me">
-        <h2 class="contact-me__title">Contact me</h2>
-
-        <p class="contact-me__description">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it!
-        </p>
-
-        <form
-          class="contact-me__form"
-          action="https://formspree.io/f/mqkonbkk"
-          method="POST"
-        >
-          <div>
+      <section id="contact" class="contact-me">
+        <div class="contact-me__wrapper">
+          <h2 class="contact-me__title">Contact me</h2>
+          <p class="contact-me__description">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it!
+          </p>
+          <form
+            class="contact-me__form"
+            action="https://formspree.io/f/mqkonbkk"
+            method="POST"
+          >
             <input
               aria-label="Full name"
               class="contact-me__form__input"
@@ -393,8 +391,6 @@
               maxlength="30"
               required
             />
-          </div>
-          <div>
             <input
               aria-label="Email"
               class="contact-me__form__input"
@@ -404,8 +400,6 @@
               placeholder="alexandra@gmail.com"
               required
             />
-          </div>
-          <div>
             <textarea
               aria-label="Message"
               class="contact-me__form__input contact-me__form__textarea"
@@ -415,12 +409,9 @@
               maxlength="500"
               required
             ></textarea>
-          </div>
-
-          <div>
             <button type="submit" class="primary-button">Get in touch</button>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
     </main>
   </body>
