@@ -128,11 +128,45 @@ body {
 }
 
 .header__nav__desktop {
+  list-style: none;
   display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__nav__link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: var(--fs-300);
+  line-height: 1.25em;
+}
+
+.header__nav__link::after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px var(--text-color);
+  transform: scaleX(0);
+  transition: transform 100ms ease-in-out;
+}
+
+.header__nav__link:hover::after {
+  transform: scaleX(1);
 }
 
 .header__hamburger-menu {
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .header__nav__desktop {
+    display: flex;
+    gap: 2em;
+  }
+
+  .header__hamburger-menu {
+    display: none;
+  }
 }
 
 /* Hero Section Styles */
