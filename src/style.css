@@ -344,7 +344,7 @@ body {
   }
 
   .works__project-card > * {
-    flex: 1 1 0rem;
+    flex: 1 1 0;
   }
 
   .works__project-card__title {
