@@ -493,7 +493,7 @@ body {
 }
 
 .contact-me__wrapper {
-  max-width: 35em;
+  max-width: 36em;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -524,7 +524,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 2em;
 }
 
 .contact-me__form__input {
@@ -557,6 +557,11 @@ body {
     background-size: 80%;
     padding-top: 8.875em;
     padding-bottom: 7.9375em;
+  }
+
+  .contact-me__form {
+    gap: 1.6875em;
+    margin-top: 1em;
   }
 
   .contact-me__form__input {
