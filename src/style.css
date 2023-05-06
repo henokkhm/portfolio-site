@@ -205,7 +205,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 588px;
-  padding-top: 5em;
   border-bottom-left-radius: 4em;
   display: flex;
   justify-content: center;
@@ -215,9 +214,10 @@ body {
   max-width: 920px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.5em;
   padding: 0 1.5em;
+  padding-top: 5em;
 }
 
 .hero__header {
@@ -230,8 +230,19 @@ body {
 }
 
 @media (min-width: 768px) {
+  .hero {
+    background-image: url("assets/images/header-shapes-desktop.svg");
+    background-size: contain;
+  }
+
   .hero__header {
     font-size: var(--fs-950);
+  }
+
+  .hero__wrapper {
+    justify-content: center;
+    padding-top: 18rem;
+    padding-bottom: 13.9375em;
   }
 }
 
@@ -470,7 +481,7 @@ body {
 
 /* Contact Form Styles */
 .contact-me {
-  background-image: url("assets/images/contact-form-bg.svg");
+  background-image: url("assets/images/contact-form-bg-mobile.svg");
   background-repeat: no-repeat;
   background-position: 103% 30%;
   background-size: 62% 100%;
@@ -539,6 +550,15 @@ body {
 }
 
 @media (min-width: 768px) {
+  .contact-me {
+    background-image: url("assets/images/contact-form-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 40% 70%;
+    background-size: 80%;
+    padding-top: 8.875em;
+    padding-bottom: 7.9375em;
+  }
+
   .contact-me__form__input {
     border-radius: 0.125em;
   }
