@@ -56,7 +56,9 @@ This project is my personal portfolio website. This is the second project in Mod
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Coming Soon
+👉 [Link to Live Demo](https://henokkhm.github.io/portfolio-site/)
+
+This site is hosted on [GitHub pages](https://pages.github.com/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
