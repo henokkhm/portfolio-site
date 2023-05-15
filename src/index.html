@@ -30,47 +30,49 @@
           <!-- Desktop Navigation -->
           <ul class="header__nav__desktop">
             <li>
-              <a class="header__nav__link" href="#portfolio">Portfolio</a>
+              <a class="header__nav__desktop__link" href="#portfolio"
+                >Portfolio</a
+              >
             </li>
-            <li><a class="header__nav__link" href="#about">About</a></li>
-            <li><a class="header__nav__link" href="#contact">Contact</a></li>
+            <li>
+              <a class="header__nav__desktop__link" href="#about">About</a>
+            </li>
+            <li>
+              <a class="header__nav__desktop__link" href="#contact">Contact</a>
+            </li>
           </ul>
 
           <!-- Mobile menu -->
-          <ul id="mobile-nav" class="header__nav__mobile">
+          <ul
+            id="mobile-nav"
+            data-visible="false"
+            aria-expanded="false"
+            class="header__nav__mobile"
+          >
             <li>
               <a
                 id="mobile-nav"
-                class="header__nav__link mobile-nav-link"
+                class="header__nav__mobile__link"
                 href="#portfolio"
                 >Portfolio</a
               >
             </li>
             <li>
-              <a class="header__nav__link mobile-nav-link" href="#about"
-                >About</a
-              >
+              <a class="header__nav__mobile__link" href="#about">About</a>
             </li>
             <li>
-              <a class="header__nav__link mobile-nav-link" href="#contact"
-                >Contact</a
-              >
+              <a class="header__nav__mobile__link" href="#contact">Contact</a>
             </li>
           </ul>
 
           <!-- Mobile nav open/close button -->
-          <div class="header__mobile-menu">
-            <img
-              id="open-menu"
-              src="assets/icons/hamburger.svg"
-              alt="Open mobile menu icon"
-            />
-            <img
-              id="close-menu"
-              src="assets/icons/close-menu.svg"
-              alt="Close mobile menu icon"
-            />
-          </div>
+          <img
+            class="header__mobile-menu"
+            data-visible="false"
+            id="mobile-menu-toggle"
+            src="assets/icons/hamburger.svg"
+            alt="Open mobile menu icon"
+          />
         </nav>
       </div>
     </header>
