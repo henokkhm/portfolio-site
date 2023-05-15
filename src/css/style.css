@@ -162,14 +162,12 @@ body {
   padding-left: 1.75em;
   margin: 0;
   margin-top: -16px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   height: 100vh;
   z-index: 20;
-  background-color: rgba(96, 112, 255, 0.85);
+  background-color: var(--primary-color-400);
   backdrop-filter: blur(10px);
+  mix-blend-mode: multiply;
 }
 
 .header__nav__mobile[data-visible='false'] {
