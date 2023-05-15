@@ -159,6 +159,7 @@ body {
   position: fixed;
   list-style: none;
   padding: 6em;
+  padding-left: 1.75em;
   margin: 0;
   margin-top: -16px;
   top: 0;
