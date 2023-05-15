@@ -158,6 +158,12 @@ body {
   padding: 0;
 }
 
+.header__nav__mobile {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .header__nav__link {
   text-decoration: none;
   color: var(--text-color);
