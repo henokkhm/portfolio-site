@@ -5,8 +5,9 @@ const mobileNavLink = document.querySelectorAll('.header__nav__mobile__link');
 const handleOpenMobileNav = () => {
   mobileNav.setAttribute('data-visible', true);
   moblieMenuToggle.setAttribute('aria-expanded', true);
+  mobileNav.style.top = 0; // Fix animation gap when menu opened for the first time
   moblieMenuToggle.setAttribute('src', 'assets/icons/close-menu.svg');
-  mobileNav.style.display = 'flex';
+  moblieMenuToggle.setAttribute('alt', 'Close mobile navigation icon');
   document.body.style.overflow = 'hidden';
 };
 
@@ -14,7 +15,7 @@ const handleCloseMobileNav = () => {
   mobileNav.setAttribute('data-visible', false);
   moblieMenuToggle.setAttribute('aria-expanded', false);
   moblieMenuToggle.setAttribute('src', 'assets/icons/hamburger.svg');
-  mobileNav.style.display = 'none';
+  moblieMenuToggle.setAttribute('alt', 'Open mobile navigation icon');
   document.body.style.overflow = 'auto';
 };
 
