@@ -5,7 +5,6 @@ const mobileNavLink = document.querySelectorAll('.header__nav__mobile__link');
 const handleOpenMobileNav = () => {
   mobileNav.setAttribute('data-visible', true);
   moblieMenuToggle.setAttribute('aria-expanded', true);
-  mobileNav.style.top = 0; // Fix animation gap when menu opened for the first time
   moblieMenuToggle.setAttribute('src', 'assets/icons/close-menu.svg');
   moblieMenuToggle.setAttribute('alt', 'Close mobile navigation icon');
   document.body.style.overflow = 'hidden';
