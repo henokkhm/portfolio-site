@@ -1,21 +1,28 @@
-const openMenu = document.querySelector('#open-menu');
-const closeMenu = document.querySelector('#close-menu');
+const moblieMenuToggle = document.querySelector('#mobile-menu-toggle');
 const mobileNav = document.querySelector('#mobile-nav');
-const mobileNavLink = document.querySelectorAll('.mobile-nav-link');
+const mobileNavLink = document.querySelectorAll('.header__nav__mobile__link');
 
-// Open mobile nav
-openMenu.addEventListener('click', () => {
+const handleOpenMobileNav = () => {
+  mobileNav.setAttribute('data-visible', true);
+  moblieMenuToggle.setAttribute('aria-expanded', true);
+  moblieMenuToggle.setAttribute('src', 'assets/icons/close-menu.svg');
   mobileNav.style.display = 'flex';
   document.body.style.overflow = 'hidden';
-});
+};
 
 const handleCloseMobileNav = () => {
+  mobileNav.setAttribute('data-visible', false);
+  moblieMenuToggle.setAttribute('aria-expanded', false);
+  moblieMenuToggle.setAttribute('src', 'assets/icons/hamburger.svg');
   mobileNav.style.display = 'none';
   document.body.style.overflow = 'auto';
 };
 
-// Handle clicking the close mobile menu icon
-closeMenu.addEventListener('click', handleCloseMobileNav);
+// Open mobile nav
+moblieMenuToggle.addEventListener('click', () => {
+  const visiblity = mobileNav.getAttribute('data-visible');
+  visiblity === 'false' ? handleOpenMobileNav() : handleCloseMobileNav();
+});
 
 // Handle clicking a mobile menu link
 mobileNavLink.forEach((link) => {
