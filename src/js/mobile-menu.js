@@ -21,7 +21,12 @@ const handleCloseMobileNav = () => {
 // Open mobile nav
 moblieMenuToggle.addEventListener('click', () => {
   const visiblity = mobileNav.getAttribute('data-visible');
-  visiblity === 'false' ? handleOpenMobileNav() : handleCloseMobileNav();
+  if (visiblity === 'false') {
+    handleOpenMobileNav();
+  }
+  if (visiblity === 'true') {
+    handleCloseMobileNav();
+  }
 });
 
 // Handle clicking a mobile menu link
