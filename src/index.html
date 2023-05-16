@@ -11,9 +11,9 @@
       rel="stylesheet"
     />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
     <title>Henok's Portfolio</title>
   </head>
 
@@ -30,16 +30,43 @@
           <!-- Desktop Navigation -->
           <ul class="header__nav__desktop">
             <li>
-              <a class="header__nav__link" href="#portfolio">Portfolio</a>
+              <a class="header__nav__desktop__link" href="#portfolio"
+                >Portfolio</a
+              >
             </li>
-            <li><a class="header__nav__link" href="#about">About</a></li>
-            <li><a class="header__nav__link" href="#contact">Contact</a></li>
+            <li>
+              <a class="header__nav__desktop__link" href="#about">About</a>
+            </li>
+            <li>
+              <a class="header__nav__desktop__link" href="#contact">Contact</a>
+            </li>
           </ul>
-          <!-- Hamburger Menu -->
+
+          <!-- Mobile menu -->
+          <ul id="mobile-nav" data-visible="false" class="header__nav__mobile">
+            <li>
+              <a
+                id="mobile-nav"
+                class="header__nav__mobile__link"
+                href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="header__nav__mobile__link" href="#about">About</a>
+            </li>
+            <li>
+              <a class="header__nav__mobile__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Mobile nav open/close button -->
           <img
-            class="header__hamburger-menu"
+            class="header__mobile-menu-icon"
+            aria-expanded="false"
+            id="mobile-menu-toggle"
             src="assets/icons/hamburger.svg"
-            alt="Hamburger menu icon"
+            alt="Open mobile menu icon"
           />
         </nav>
       </div>
@@ -141,7 +168,7 @@
                 <li class="works__project-card__tech-stack-item">javaScript</li>
               </ul>
               <!-- See Project Details Button -->
-              <button class="primary-button">See project</button>
+              <button type="button" class="primary-button">See project</button>
             </div>
           </li>
 
@@ -184,7 +211,7 @@
                 <li class="works__project-card__tech-stack-item">javaScript</li>
               </ul>
               <!-- See Project Details Button -->
-              <button class="primary-button">See project</button>
+              <button type="button" class="primary-button">See project</button>
             </div>
           </li>
 
@@ -227,7 +254,7 @@
                 <li class="works__project-card__tech-stack-item">javaScript</li>
               </ul>
               <!-- See Project Details Button -->
-              <button class="primary-button">See project</button>
+              <button type="button" class="primary-button">See project</button>
             </div>
           </li>
 
@@ -272,7 +299,7 @@
                 <li class="works__project-card__tech-stack-item">javaScript</li>
               </ul>
               <!-- See Project Details Button -->
-              <button class="primary-button">See project</button>
+              <button type="button" class="primary-button">See project</button>
             </div>
           </li>
         </ul>
@@ -327,7 +354,7 @@
             </ul>
           </div>
           <!-- Get Resume Button -->
-          <button class="primary-button">Get my resume</button>
+          <button type="button" class="primary-button">Get my resume</button>
         </div>
 
         <!-- About me summary -->
@@ -414,5 +441,6 @@
         </div>
       </section>
     </main>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

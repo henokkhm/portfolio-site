@@ -20,7 +20,7 @@
   --background-color: #e5e5e5;
 
   /* Fonts */
-  --font-poppins: "Poppins", sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
 
   /* Font Sizes */
 
@@ -44,6 +44,7 @@ html {
 body {
   font-family: var(--font-poppins);
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 .container {
@@ -151,6 +152,54 @@ body {
   display: flex;
 }
 
+.header__nav__mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: fixed;
+  list-style: none;
+  padding: 6em;
+  padding-left: 1.75em;
+  margin: 0;
+  margin-top: -16px;
+  inset: 0;
+  height: 100vh;
+  z-index: 20;
+  background-color: var(--primary-color-400);
+  backdrop-filter: blur(10px);
+  mix-blend-mode: multiply;
+}
+
+.header__nav__mobile[data-visible='false'] {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 300ms ease-in;
+}
+
+.header__nav__mobile[data-visible='true'] {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 300ms ease-in;
+}
+
+.header__nav__mobile__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.header__nav__mobile__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.75rem;
+}
+
+.header__mobile-menu-icon {
+  position: relative;
+  z-index: 30;
+  cursor: pointer;
+}
+
 .header__nav__desktop {
   list-style: none;
   display: none;
@@ -158,7 +207,7 @@ body {
   padding: 0;
 }
 
-.header__nav__link {
+.header__nav__desktop__link {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
@@ -166,20 +215,16 @@ body {
   line-height: 1.25em;
 }
 
-.header__nav__link::after {
+.header__nav__desktop__link::after {
   display: block;
-  content: "";
+  content: '';
   border-bottom: solid 0.125rem var(--text-color);
   transform: scaleX(0);
   transition: transform 100ms ease-in-out;
 }
 
-.header__nav__link:hover::after {
+.header__nav__desktop__link:hover::after {
   transform: scaleX(1);
-}
-
-.header__hamburger-menu {
-  cursor: pointer;
 }
 
 /* Header Desktop Styles */
@@ -193,14 +238,18 @@ body {
     gap: 2em;
   }
 
-  .header__hamburger-menu {
+  .header__mobile-menu-icon {
+    display: none;
+  }
+
+  .header__mobile-menu {
     display: none;
   }
 }
 
 /* Hero Section Styles */
 .hero {
-  background-image: url("assets/images/header-shapes-mobile.svg");
+  background-image: url('../assets/images/header-shapes-mobile.svg');
   background-color: var(--white);
   background-repeat: no-repeat;
   background-size: contain;
@@ -231,7 +280,7 @@ body {
 
 @media (min-width: 48rem) {
   .hero {
-    background-image: url("assets/images/header-shapes-desktop.svg");
+    background-image: url('../assets/images/header-shapes-desktop.svg');
     background-size: contain;
   }
 
@@ -490,7 +539,7 @@ body {
 
 /* Contact Form Styles */
 .contact-me {
-  background-image: url("assets/images/contact-form-bg-mobile.svg");
+  background-image: url('../assets/images/contact-form-bg-mobile.svg');
   background-repeat: no-repeat;
   background-position: 103% 30%;
   background-size: 62% 100%;
@@ -560,7 +609,7 @@ body {
 
 @media (min-width: 48rem) {
   .contact-me {
-    background-image: url("assets/images/contact-form-bg-desktop.svg");
+    background-image: url('../assets/images/contact-form-bg-desktop.svg');
     background-repeat: no-repeat;
     background-position: 40% 70%;
     background-size: 80%;
