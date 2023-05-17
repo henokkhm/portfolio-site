@@ -354,6 +354,11 @@ body {
   gap: 0.8em;
 }
 
+.works__project-card:hover {
+  cursor: url('../assets/icons/hand-pointer.svg'), auto;
+  border: #a7aeff 2px solid;
+}
+
 .works__project-card__screenshot-wrapper {
   overflow: hidden;
   border-radius: 0.5em;
