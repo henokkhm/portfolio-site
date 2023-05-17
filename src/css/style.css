@@ -140,6 +140,8 @@ body {
   margin: 0;
   margin-bottom: 0.5em;
   display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 0.5em;
 }
 
@@ -151,9 +153,16 @@ body {
   text-transform: uppercase;
 }
 
+/* Miscellaneous */
+.divider {
+  border-top: 1px solid var(--light-blue);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 @media (min-width: 48rem) {
-  .paragraph-text {
-    font-size: var(--fs-700);
+  .paragraph-text-hero {
+    font-size: var(--fs-400);
   }
 
   .social-media-links__title {
@@ -333,44 +342,6 @@ body {
   flex-direction: column;
 }
 
-.modal {
-  /* display: none; */
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow: auto;
-  background-color: rgba(193, 199, 208, 0.85);
-  padding: 50px;
-}
-
-.modal img {
-  width: 100%;
-}
-
-.modal .modal-card {
-  background: #fff;
-  border-radius: 16px;
-  margin: auto;
-  padding: 20px;
-}
-
-.modal .card-details {
-  display: grid;
-  grid-template-columns: 4fr 3fr;
-}
-
-.modal .card-btn {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
 @media (min-width: 48rem) {
   .hero {
     background-image: url('../assets/images/header-shapes-desktop.svg');
@@ -460,6 +431,97 @@ body {
 
   .project-card__body {
     padding: 1.5em;
+  }
+}
+
+/* Modal Styles */
+.project-modal-wrapper {
+  /* display: none; */
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  overflow: auto;
+  background-color: rgba(193, 199, 208, 0.85);
+}
+
+.project-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  min-width: 21em;
+  max-width: 60rem;
+  background: #fff;
+  z-index: 20;
+  border-radius: 1em;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.project-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-modal__close-icon {
+  cursor: pointer;
+  transition: transform 100ms ease-in;
+}
+
+.project-modal__close-icon:hover {
+  transform: scale(1.2);
+}
+
+.project-modal__screenshot {
+  width: 100%;
+  margin-bottom: 0.75em;
+}
+
+.project-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.project-modal__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.project-modal__btn-wrapper {
+  display: flex;
+  gap: 0.75em;
+  flex-wrap: wrap;
+}
+
+.project-modal__btn {
+  display: flex;
+  gap: 0.875em;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Desktop Styles */
+@media (min-width: 48rem) {
+  .project-modal {
+    padding: 1.5rem;
+  }
+
+  .project-modal__screenshot {
+    margin-bottom: 1.5em;
+  }
+
+  .project-modal__body {
+    flex-direction: row;
+  }
+
+  .project-modal__details {
+    width: 60%;
   }
 }
 
