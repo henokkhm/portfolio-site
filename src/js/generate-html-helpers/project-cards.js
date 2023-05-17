@@ -1,8 +1,6 @@
 const generateTechItems = (techStack) => {
   const generatedHTML = techStack
-    .map(
-      (tech) => `<li class="works__project-card__tech-stack-item">${tech}</li>`,
-    )
+    .map((tech) => `<li class="project-card__tech-stack-item">${tech}</li>`)
     .join('\n');
   return generatedHTML;
 };
@@ -20,11 +18,11 @@ const generateSingleProjectCardHTML = (projectDetails) => {
   } = projectDetails;
 
   return `
-    <li class="works__project-card">
+  <li class="project-card">
   <!-- Project Screenshot -->
-  <div class="works__project-card__screenshot-wrapper">
+  <div class="project-card__screenshot-wrapper">
     <img
-      class="works__project-card__screenshot"
+      class="project-card__screenshot"
       srcset="${featuredImage.srcset}"
       sizes="${featuredImage.sizes}"
       src="${featuredImage.src}"
@@ -32,23 +30,23 @@ const generateSingleProjectCardHTML = (projectDetails) => {
     />
   </div>
 
-  <div class="works__project-card__body">
+  <div class="project-card__body">
     <!-- Project Title -->
-    <h3 class="works__project-card__title">${name}</h3>
+    <h3 class="project__title">${name}</h3>
     <!-- Project Summary -->
-    <div class="works__project-card__summary">
-      <span class="works__project-card__client">${client}</span>
+    <div class="project__summary">
+      <span class="project__client">${client}</span>
       <img src="assets/separator.svg" alt="" />
-      <span class="works__project-card__role">${role}</span>
+      <span class="project__role">${role}</span>
       <img src="assets/separator.svg" alt="" />
-      <span class="works__project-card__year">${year}</span>
+      <span class="project__year">${year}</span>
     </div>
     <!-- Project Intro -->
-    <p class="works__project-card__intro">
+    <p class="project-card__intro">
       ${description}
     </p>
     <!-- Project Tech Stack -->
-    <ul class="works__project-card__tech-stack-list">
+    <ul class="project__tech-stack-list">
       ${generateTechItems(techStack)}
     </ul>
     <!-- See Project Details Button -->
