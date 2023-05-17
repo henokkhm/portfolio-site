@@ -278,6 +278,44 @@ body {
   flex-direction: column;
 }
 
+.modal {
+  /* display: none; */
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  background-color: rgba(193, 199, 208, 0.85);
+  padding: 50px;
+}
+
+.modal img {
+  width: 100%;
+}
+
+.modal .modal-card {
+  background: #fff;
+  border-radius: 16px;
+  margin: auto;
+  padding: 20px;
+}
+
+.modal .card-details {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+}
+
+.modal .card-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 48rem) {
   .hero {
     background-image: url('../assets/images/header-shapes-desktop.svg');
