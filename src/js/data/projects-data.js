@@ -18,6 +18,20 @@ export default [
       A daily selection of privately personalized reads; no accounts
       or sign-ups required.
     `,
+    descriptionLong: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, possimus.
+      Sed, exercitationem dolorum? Harum molestiae dolor, veniam ut quisquam voluptas
+      reiciendis neque illum maiores? Ipsum praesentium nesciunt, soluta sit provident
+      architecto ipsam sunt similique a vitae! Enim iusto qui ab ducimus eaque
+      exercitationem quod temporibus magni optio fuga labore illo, officiis
+      voluptates? 
+
+      Aliquam, corporis modi, ipsa, mollitia magnam porro nulla delectus
+      sit iste quae assumenda molestias voluptatibus tenetur praesentium quisquam
+      dolores dignissimos perspiciatis autem asperiores officiis eum quibusdam
+      aspernatur! Consequatur magni aspernatur ab id veritatis esse totam facilis
+      corrupti!
+    `,
     techStack: ['html', 'css', 'javaScript'],
     linkToLiveVersion: '#',
     linkToSource: '#',
@@ -40,6 +54,20 @@ export default [
     description: `
       A daily selection of privately personalized reads; no accounts
       or sign-ups required.
+    `,
+    descriptionLong: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, possimus.
+      Sed, exercitationem dolorum? Harum molestiae dolor, veniam ut quisquam voluptas
+      reiciendis neque illum maiores? Ipsum praesentium nesciunt, soluta sit provident
+      architecto ipsam sunt similique a vitae! Enim iusto qui ab ducimus eaque
+      exercitationem quod temporibus magni optio fuga labore illo, officiis
+      voluptates? 
+
+      Aliquam, corporis modi, ipsa, mollitia magnam porro nulla delectus
+      sit iste quae assumenda molestias voluptatibus tenetur praesentium quisquam
+      dolores dignissimos perspiciatis autem asperiores officiis eum quibusdam
+      aspernatur! Consequatur magni aspernatur ab id veritatis esse totam facilis
+      corrupti!
     `,
     techStack: ['html', 'css', 'javaScript'],
     linkToLiveVersion: '#',
@@ -64,6 +92,20 @@ export default [
       A daily selection of privately personalized reads; no accounts
       or sign-ups required.
     `,
+    descriptionLong: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, possimus.
+      Sed, exercitationem dolorum? Harum molestiae dolor, veniam ut quisquam voluptas
+      reiciendis neque illum maiores? Ipsum praesentium nesciunt, soluta sit provident
+      architecto ipsam sunt similique a vitae! Enim iusto qui ab ducimus eaque
+      exercitationem quod temporibus magni optio fuga labore illo, officiis
+      voluptates? 
+
+      Aliquam, corporis modi, ipsa, mollitia magnam porro nulla delectus
+      sit iste quae assumenda molestias voluptatibus tenetur praesentium quisquam
+      dolores dignissimos perspiciatis autem asperiores officiis eum quibusdam
+      aspernatur! Consequatur magni aspernatur ab id veritatis esse totam facilis
+      corrupti!
+    `,
     techStack: ['html', 'css', 'javaScript'],
     linkToLiveVersion: '#',
     linkToSource: '#',
@@ -86,6 +128,20 @@ export default [
     description: `
       A daily selection of privately personalized reads; no accounts
       or sign-ups required.
+    `,
+    descriptionLong: `
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, possimus.
+      Sed, exercitationem dolorum? Harum molestiae dolor, veniam ut quisquam voluptas
+      reiciendis neque illum maiores? Ipsum praesentium nesciunt, soluta sit provident
+      architecto ipsam sunt similique a vitae! Enim iusto qui ab ducimus eaque
+      exercitationem quod temporibus magni optio fuga labore illo, officiis
+      voluptates? 
+
+      Aliquam, corporis modi, ipsa, mollitia magnam porro nulla delectus
+      sit iste quae assumenda molestias voluptatibus tenetur praesentium quisquam
+      dolores dignissimos perspiciatis autem asperiores officiis eum quibusdam
+      aspernatur! Consequatur magni aspernatur ab id veritatis esse totam facilis
+      corrupti!
     `,
     techStack: ['html', 'css', 'javaScript'],
     linkToLiveVersion: '#',
