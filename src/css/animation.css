@@ -53,16 +53,31 @@
 }
 
 /* Animate project screenshots */
-.works__project-card__screenshot {
+.project-card__screenshot {
   transition: transform 0.3s ease-in-out;
 }
 
-.works__project-card__screenshot:hover {
+.project-card__screenshot:hover {
   transform: scale(1.2);
 }
 
 @media (min-width: 768px) {
-  .works__project-card__screenshot:hover {
+  .project-card__screenshot:hover {
     transform: scale(1.05);
+  }
+}
+
+/* Animate opening of modal */
+.project-modal {
+  animation: animate-modal-opening 400ms ease-in;
+}
+
+@keyframes animate-modal-opening {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
