@@ -73,7 +73,6 @@ const generateProjectModalHTML = (projectData) => {
           <div class="project-modal__btn-wrapper">
             <a
               href="${linkToLiveVersion}"
-              type="button"
               class="primary-button project-modal__btn"
             >
               <span>See live</span>
@@ -81,7 +80,6 @@ const generateProjectModalHTML = (projectData) => {
             </a>
             <a
               href="${linkToSource}"
-              type="button"
               class="primary-button project-modal__btn"
             >
               <span>See source</span>

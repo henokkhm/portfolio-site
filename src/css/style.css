@@ -504,6 +504,12 @@ body {
   gap: 0.875em;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  transition: transform 300ms ease-in-out;
+}
+
+.project-modal__btn:hover {
+  transform: scale(1.05);
 }
 
 /* Modal Desktop Styles */
