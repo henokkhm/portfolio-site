@@ -436,7 +436,7 @@ body {
 
 /* Modal Styles */
 .project-modal-wrapper {
-  /* display: none; */
+  display: none;
   position: fixed;
   z-index: 10;
   inset: 0;
