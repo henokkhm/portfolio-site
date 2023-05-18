@@ -4,5 +4,7 @@ import projectsData from './data/projects-data.js';
 const projectCardsWrapper = document.querySelector('#project-cards-wrapper');
 
 window.onload = () => {
-  projectCardsWrapper.innerHTML = generateProjectCardsHTML(projectsData);
+  if (projectCardsWrapper) {
+    projectCardsWrapper.innerHTML = generateProjectCardsHTML(projectsData);
+  }
 };
