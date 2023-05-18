@@ -84,11 +84,13 @@ body {
 
 .primary-button:hover:enabled {
   background-color: var(--primary-color-400);
+  border: 0.0625rem solid var(--white);
   color: var(--white);
 }
 
 .primary-button:active:enabled {
   background-color: var(--primary-color-800);
+  border: 0.0625rem solid var(--white);
 }
 
 /* Social Media Links Styles */
