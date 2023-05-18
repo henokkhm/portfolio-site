@@ -613,7 +613,6 @@ body {
   color: #fae700;
   width: 100%;
   text-align: left;
-  display: flex;
   gap: 0.75em;
   margin-top: -1.2em;
   transition: all 150ms ease-in-out;
