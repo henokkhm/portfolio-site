@@ -427,6 +427,13 @@
               placeholder="alexandra@gmail.com"
               required
             />
+            <div
+              id="email-validation-error"
+              class="contact-me__form__error-message"
+            >
+              <img src="assets/icons/danger.svg" alt="" />
+              <p>Please enter your email in all lowercase letters.</p>
+            </div>
             <textarea
               aria-label="Message"
               class="contact-me__form__input contact-me__form__textarea"
@@ -437,7 +444,6 @@
               required
             ></textarea>
             <button type="submit" class="primary-button">Get in touch</button>
-            <div id="validate"></div>
           </form>
         </div>
       </section>
