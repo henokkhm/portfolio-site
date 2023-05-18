@@ -232,6 +232,7 @@
             to help with it!
           </p>
           <form
+            id="contact-me__form"
             class="contact-me__form"
             action="https://formspree.io/f/mqkonbkk"
             method="POST"
@@ -255,6 +256,13 @@
               placeholder="alexandra@gmail.com"
               required
             />
+            <div
+              id="email-validation-error"
+              class="contact-me__form__error-message"
+            >
+              <img src="assets/icons/danger.svg" alt="" />
+              <p>Please enter your email in all lowercase letters.</p>
+            </div>
             <textarea
               aria-label="Message"
               class="contact-me__form__input contact-me__form__textarea"
@@ -272,5 +280,6 @@
     <script src="js/script.js" type="module"></script>
     <script src="js/mobile-menu.js" type="module"></script>
     <script src="js/project-details-modal.js" type="module"></script>
+    <script src="js/contact-form-validator.js"></script>
   </body>
 </html>

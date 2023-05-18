@@ -84,11 +84,13 @@ body {
 
 .primary-button:hover:enabled {
   background-color: var(--primary-color-400);
+  border: 0.0625rem solid var(--white);
   color: var(--white);
 }
 
 .primary-button:active:enabled {
   background-color: var(--primary-color-800);
+  border: 0.0625rem solid var(--white);
 }
 
 /* Social Media Links Styles */
@@ -717,6 +719,17 @@ body {
 
 .contact-me__form__textarea:focus {
   border-color: var(--black);
+}
+
+/* Validation Error Styles */
+.contact-me__form__error-message {
+  display: none;
+  color: #fae700;
+  width: 100%;
+  text-align: left;
+  gap: 0.75em;
+  margin-top: -1.2em;
+  transition: all 150ms ease-in-out;
 }
 
 @media (min-width: 48rem) {
