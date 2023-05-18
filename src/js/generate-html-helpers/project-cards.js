@@ -1,6 +1,6 @@
 const generateTechItems = (techStack) => {
   const generatedHTML = techStack
-    .map((tech) => `<li class="project-card__tech-stack-item">${tech}</li>`)
+    .map((tech) => `<li class="project__tech-stack-item">${tech}</li>`)
     .join('\n');
   return generatedHTML;
 };
