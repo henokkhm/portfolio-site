@@ -10,7 +10,7 @@ const projectModalWrapper = document.querySelector('#project-modal-wrapper');
 projectCardsWrapper.addEventListener('click', (e) => {
   if (e.target.classList.contains('see-project-details-button')) {
     const { id } = e.target.dataset;
-    const selectedProject = projectsData.find((project) => project.id === id);
+    const selectedProject = projectsData.find((project, index) => id % 4 === index);
     projectModalWrapper.innerHTML = generateProjectModalHTML(selectedProject);
     projectModalWrapper.style.display = 'block';
     document.body.style.overflow = 'hidden';

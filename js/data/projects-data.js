@@ -1,6 +1,6 @@
 export default [
   {
-    id: '01',
+    id: 1,
     name: 'Tonic',
     featuredImage: {
       srcset: `
@@ -37,7 +37,7 @@ export default [
     linkToSource: '#',
   },
   {
-    id: '02',
+    id: 2,
     name: 'Multi-Post Stories',
     featuredImage: {
       srcset: `
@@ -74,7 +74,7 @@ export default [
     linkToSource: '#',
   },
   {
-    id: '03',
+    id: 3,
     name: 'Gym Fit Yoga',
     featuredImage: {
       srcset: `
@@ -111,7 +111,7 @@ export default [
     linkToSource: '#',
   },
   {
-    id: '04',
+    id: 4,
     name: 'Professional Art Printing',
     featuredImage: {
       srcset: `
